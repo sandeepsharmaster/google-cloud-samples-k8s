@@ -2,8 +2,20 @@ variable "project_id" {
   description = "project id"
 }
 
+variable "project" {
+  description = "project id"
+}
+
+
 variable "region" {
   description = "region"
+  default     = "us-central1"
+}
+
+variable "zone" {
+  description = "The zone in which to create the Kubernetes cluster. Must match the region"
+  type        = string
+  default     = "us-central1-a"
 }
 
 ## GKE Settings from here ##
